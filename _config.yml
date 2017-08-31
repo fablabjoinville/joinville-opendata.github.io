@@ -1,0 +1,52 @@
+title: Joinville Dados Abertos
+url: "http://joinville.observer"
+baseurl: ""
+google_analytics_key:
+disqus_shortname:
+
+description: Joinville Dados Abertos
+
+author:
+  name: Fab Lab Joinville
+  email: contato@fablabjoinville.com.br
+  twitter: fablabjoinville
+
+social:
+  name: Joinville Dados Abertos
+  links:
+    - https://github.com/joinville-opendata
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+gems:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 960
+          height: 2000
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"

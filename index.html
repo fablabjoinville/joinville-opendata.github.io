@@ -1,0 +1,23 @@
+---
+title: Urban
+---
+
+<section class="hero">
+  <div class="container">
+    <center>
+      <h2 style="text-transform: uppercase;">{{ site.data.company.title }}</h2>
+      <p class="subtext">Somos uma <strong>comunidade</strong> de entusiastas de Dados Abertos trabalhando em projetos de software e jornalismo de dados.</p>
+    </center>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="text-container">
+    <center>
+      <h1 style="text-transform: uppercase;">BLOG</h1>
+    </center>
+    <ul class="blog-posts">
+      {% include list-posts.html posts=site.posts %}
+    </ul>
+  </div>
+</section>
