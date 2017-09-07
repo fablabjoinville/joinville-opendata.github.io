@@ -5,16 +5,9 @@ layout: page
   <div class="blog-post text-container">
     {% include post-title.html post=page %}
     <div class="post-content">
+      <p><strong>Por:</strong> {{ page.post-author }}</p>
       {{ content }}
     </div>
-  </div>
-</section>
-
-<section class="alternate">
-  <div class="container">
-    <h2>Author</h2>
-    <ul class="image-grid">
-    </ul>
   </div>
 </section>
 
